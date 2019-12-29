@@ -1,11 +1,36 @@
 package tppoo;
 
+/**
+ * classe of phone
+ * @param
+ * @author firmin
+ *
+ */
+
 public class Phone {
+
     private String mark;
     private int price;
     private int ram;
+
+    /**
+     * default constructor
+     */
     public Phone(){
 
+    }
+
+    /**
+     * constructor with parameters
+     * each params is initialize in this constructor
+     * @param phoneMark
+     * @param phonePrice
+     * @param phoneRam
+     */
+    public Phone(String phoneMark,int phonePrice, int phoneRam){
+        this.mark=phoneMark;
+        this.price=phonePrice;
+        this.ram=phoneRam;
     }
 
     public String getMark() {
