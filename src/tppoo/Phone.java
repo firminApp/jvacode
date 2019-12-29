@@ -18,6 +18,7 @@ public class Phone {
      */
     public Phone(){
 
+        System.out.print("Je suis le constructeur par defaut, je ne prend aucun paramettre");
     }
 
     /**
@@ -28,6 +29,7 @@ public class Phone {
      * @param phoneRam
      */
     public Phone(String phoneMark,int phonePrice, int phoneRam){
+        System.out.print("Je suis le constructeur avec paramettres? je prend axacteent paramettre");
         this.mark=phoneMark;
         this.price=phonePrice;
         this.ram=phoneRam;
@@ -55,5 +57,8 @@ public class Phone {
 
     public void setRam(int ram) {
         this.ram = ram;
+    }
+    public int somme(){
+        return price+ram;
     }
 }
